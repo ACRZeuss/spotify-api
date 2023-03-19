@@ -2,6 +2,7 @@
   "name": "spotify-api",
   "version": "0.0.0",
   "private": true,
+  "author": "Erhan Polat (ACRZeuss)"
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -25,13 +26,13 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ACRZeuss/spotify-api-backend.git"
+    "url": "git+https://github.com/ACRZeuss/spotify-api.git"
   },
   "author": "ACRZeuss",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ACRZeuss/spotify-api-backend/issues"
+    "url": "https://github.com/ACRZeuss/spotify-api/issues"
   },
-  "homepage": "https://github.com/ACRZeuss/spotify-api-backend#readme",
+  "homepage": "https://github.com/ACRZeuss/spotify-api#readme",
   "description": ""
 }
