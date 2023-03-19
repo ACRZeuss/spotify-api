@@ -32,6 +32,15 @@ router.get('/callback', async (req,res) => {
     const { access_token, refresh_token } = data.body;
     spotifyApi.setAccessToken(access_token);
     spotifyApi.setRefreshToken(refresh_token);
+    setInterval(async () => {
+      try {
+        var data = await spotifyApi.refreshAccessToken();
+        const { access_token } = data.body;
+        spotifyApi.setAccessToken(access_token);
+      } catch (err) {
+        console.log("Could not refresh access token", err);
+      }
+    }, 1000 * 60 * 60);
 
     res.redirect('Your redirect url');
   } catch(err) {
